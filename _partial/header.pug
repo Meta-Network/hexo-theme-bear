@@ -2,10 +2,10 @@ header.container#header
   .header
     .header-left
       .avatar
-        img(src=theme.avatar)
+        img(src="/images/MetaSpace_Logo.svg")
       .author
         div.author-name
-          a(href="/")=theme.author
+          a(href="/")=theme.title
         div.about-me=theme.aboutme
 
     .header-right
@@ -14,4 +14,4 @@ header.container#header
           li
             a(href=link)=text
             
-    include ./aboutme.pug
+  include ./aboutme.pug

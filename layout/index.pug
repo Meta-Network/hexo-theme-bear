@@ -6,6 +6,10 @@ block content
     each post in site.posts.sort('date', -1).data
       section.article
         a(href=url_for(post.path)).title= post.title || '未命名'
+        .meta 
+          include ../_partial/profile
+          .date.meta-ele #{moment(page.date).format(theme.date_format)}
+          a.meta-data.meta-ele(href=page.MetadataUrl) Meta Data #{page.serverVerificationMetadataRefer && page.serverVerificationMetadataRefer} 
         div.content.excerpt!= post.excerpt || post.content
         if post.tags
           .tags!= list_tags(post.tags, { show_count: false, class: 'tag', style: false, separator: '' })

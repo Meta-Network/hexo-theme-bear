@@ -1,26 +1,8 @@
-.about-me-mask
-  position fixed
-  background-color rgba(255, 255, 255, 0.48)
-  top 0
-  right 0
-  bottom 0
-  left 0
-  height 100%
-  z-index 1000
-
-  display none
-
-  &.open
-    display block
-
 .about-me-wrap
   display flex
   flex-direction column
-  justify-content center
-  align-items center
-  width 30rem
-  margin 10rem auto
-  padding gutter-size * 2 0
+  margin 2rem auto
+  padding 2rem 1rem
   box-sizing border-box
   background-color color-article-background
   border 1px solid lighten(color-grey, 50%)
@@ -29,7 +11,7 @@
 
   @media mq-mobile
     width auto
-    margin 10rem 1rem
+    margin 2rem 1rem
 
 .about-me__header
   .avatar
@@ -59,3 +41,28 @@
     img
       width 100%
       height 100%
+
+.about__title
+  font-size: gutter-size
+  font-weight: bold
+
+.domain
+  font-weight: bold
+  cursor pointer
+
+.about-author
+  margin-top: 2rem
+  
+  display: flex
+  align-items: center
+
+  span
+    font-weight: bold
+    margin-right: 1rem
+
+  .button
+    margin-left: 2rem
+    background-color: #a7b0b3
+    border-radius: 12px
+    color: white
+    padding: 0 0.8rem

@@ -4,7 +4,11 @@ block content
   .container.post
     section.article
       .title= page.title
-      .date 写于#{moment(page.date).format(theme.date_format)}
+      .meta 
+        include ../_partial/profile
+        .date.meta-ele #{moment(page.date).format(theme.date_format)}
+        a.meta-data.meta-ele(href=page.MetadataUrl) Meta Data page.serverVerificationMetadataRefer 
+
       .content!= page.content
       if page.tags
         .tags!= list_tags(page.tags, { show_count: false, class: 'tag', style: false, separator: '' })
