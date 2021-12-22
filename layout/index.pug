@@ -8,8 +8,9 @@ block content
         a(href=url_for(post.path)).title= post.title || '未命名'
         .meta 
           include ../_partial/profile
-          .date.meta-ele #{moment(page.date).format(theme.date_format)}
-          a.meta-data.meta-ele(href=page.MetadataUrl) Meta Data #{page.serverVerificationMetadataRefer && page.serverVerificationMetadataRefer} 
+          .date.meta-ele #{moment(post.date).format(theme.date_format)}
+          if post.serverVerificationMetadataRefer
+            a.meta-data.meta-ele(href=page.MetadataUrl) Meta Data #{post.serverVerificationMetadataRefer} 
         div.content.excerpt!= post.excerpt || post.content
         if post.tags
           .tags!= list_tags(post.tags, { show_count: false, class: 'tag', style: false, separator: '' })
