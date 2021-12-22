@@ -8,7 +8,7 @@ block content
         include ../_partial/profile
         .date.meta-ele #{moment(page.date).format(theme.date_format)}
         if page.serverVerificationMetadataRefer
-          a.meta-data.meta-ele(href=page.MetadataUrl) Meta Data #{page.serverVerificationMetadataRefer} 
+          a.meta-data.meta-ele(href=page.MetadataUrl) Meta Data #{page.serverVerificationMetadataRefer.slice(0, 8)} 
 
       .content!= page.content
       if page.tags
