@@ -10,7 +10,7 @@ block content
           include ../_partial/profile
           .date.meta-ele #{moment(post.date).format(theme.date_format)}
           if post.serverVerificationMetadataRefer
-            a.meta-data.meta-ele(href=page.MetadataUrl) Meta Data #{post.serverVerificationMetadataRefer.slice(0, 8)} 
+            a.meta-data.meta-ele(href=post.MetadataUrl) Meta Data #{post.serverVerificationMetadataRefer.slice(0, 8)} 
         div.content.excerpt!= (post.excerpt || post.content).split('\n', 5).join('\n')
         if post.tags
           .tags!= list_tags(post.tags, { show_count: false, class: 'tag', style: false, separator: '' })
