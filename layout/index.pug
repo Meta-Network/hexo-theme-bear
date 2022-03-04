@@ -5,6 +5,8 @@ block content
   .container.home
     each post in site.posts.sort('date', -1).data
       section.article
+        if post.cover 
+          img(src=post.cover, alt="").list-cover
         a(href=url_for(post.path)).title= post.title || '未命名'
         .meta 
           include ../_partial/profile

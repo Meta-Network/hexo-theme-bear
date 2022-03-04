@@ -3,6 +3,8 @@ extends ../_partial/layout
 block content
   .container.post
     section.article
+      if page.cover 
+        img(src=page.cover, alt="").cover
       .title= page.title
       .meta 
         include ../_partial/profile
