@@ -3,22 +3,20 @@ menu:
   归档: /archives
 rss: /atom.xml
 title: GARY.SHEN
-
+description: "GARY.SHEN description"
 author: GARY.SHEN
 aboutme: Halo~
 
 # Content
 excerpt_link: 全文...
 fancybox: true
-date_format: 'YYYY年MM月DD日'
+date_format: "YYYY年MM月DD日"
 
 socials:
   github: "https://github.com/gary-Shen"
   flickr: "https://www.flickr.com/photos/69944455@N05/"
   email: "guanlinshen@126.com"
   wechat: "Grinson"
-
-
 
 # Sidebar
 # sidebar: right
@@ -38,13 +36,13 @@ index_widgets:
 highlight_theme: atom light
 
 # widget behavior
-archive_type: 'monthly'
+archive_type: "monthly"
 show_count: false
 
 disqus_shortname:
 
 # Miscellaneous
-google_analytics: 'UA-61220413-1'
+google_analytics: "UA-61220413-1"
 gauges_analytics:
 favicon: /images/avatar.png
 avatar: "/images/avatar.png"
@@ -52,3 +50,6 @@ twitter:
 google_plus:
 fb_admins:
 fb_app_id:
+
+open_graph:
+  enable: true
