@@ -19,11 +19,11 @@ block content
   .container
     ul.nav
       if page.prev
-        li 上一篇：
-          a(href=url_for(page.prev.path))= page.prev.title || '未命名'
+        li Prev：
+          a(href=url_for(page.prev.path))= page.prev.title || 'Untitled'
       if page.next
-        li 下一篇：
-          a(href=url_for(page.next.path))= page.next.title || '未命名'
+        li Next：
+          a(href=url_for(page.next.path))= page.next.title || 'Untitled'
 
     if !index && config.disqus_shortname
       .comments
