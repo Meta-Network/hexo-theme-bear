@@ -1,6 +1,6 @@
 # Header
 menu:
-  归档: /archives
+  Archive: /archives
 rss: /atom.xml
 title: GARY.SHEN
 description: "GARY.SHEN description"
@@ -8,9 +8,9 @@ author: GARY.SHEN
 aboutme: Halo~
 
 # Content
-excerpt_link: 全文...
+excerpt_link: More...
 fancybox: true
-date_format: "YYYY年MM月DD日"
+date_format: "YYYY-MM-DD"
 
 socials:
   github: "https://github.com/gary-Shen"
