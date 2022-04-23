@@ -7,7 +7,7 @@ block content
       section.article
         if post.cover 
           img(src=post.cover, alt="").list-cover
-        a(href=url_for(post.path)).title= post.title || '未命名'
+        a(href=url_for(post.path)).title= post.title || 'Untitled'
         .meta 
           include ../_partial/profile
           .date.meta-ele #{moment(post.date).format(theme.date_format)}
