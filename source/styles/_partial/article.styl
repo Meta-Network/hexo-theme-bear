@@ -103,10 +103,14 @@
 
   li {
     line-height: 2rem
-    margin-bottom gutter-size
+    margin-bottom (gutter-size / 2)
     margin-left gutter-size
     padding-left .2rem
     color color-link
+
+    &:last-of-type {
+      margin-bottom gutter-size
+    }
 
     @media mq-mobile {
       font-size gutter-size
